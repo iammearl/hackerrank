@@ -16,6 +16,11 @@ function timeConversion(string = "07:05:45PM") {
 		}
 	}
 
+	/*
 	// lazy formatting
 	return timeArr[0] + ":" + timeArr[1] + ":" + timeArr[2];
+	//*/
+
+	// Better:
+	return timeArr.join(":");
 }
